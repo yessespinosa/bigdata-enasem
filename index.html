@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link href="css.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Encuesta Nacional de Envejecimiento en México</title>
+    <script>
+        $(document).ready(function () {
+            $("#hipertension").click(function () {
+                $("#tablero").load("tableros/hipertensión.html");
+            });
+            $("#diabetes").click(function () {
+                $("#tablero").load("tableros/diabetes.html");
+            });
+            $("#cancer").click(function () {
+                $("#tablero").load("tableros/cancer.html");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="grid">
+        <div class="d1">
+            <h1>ENCUESTA NACIONAL DE ENVEJECIMIENTO EN MÉXICO (ENASEM)</h1>
+        </div>
+        <div class="d2">
+            <h2>Datos estadísticos</h2>
+            <ul>
+                <li id="hipertension">Hipertensión</li>
+                <li id="diabetes">Diabetes</li>
+                <li id="cancer">Cáncer</li>
+            </ul>
+            <h2>Datos geográficos</h2>
+            <ul>
+                <li>Entidades</li>
+            </ul>
+        </div>
+        <div class="d3" id="tablero">
+            
+        </div>
+    </div>
+</body>
+</html>
